@@ -1,0 +1,86 @@
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/mononoki" type="text/css"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhili Tian</title>
+    <style>
+        body {
+            font-family: 'mononokiRegular';
+            font-weight: normal; 
+            font-style: normal;
+            font-size: larger;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { color: #2c3e50; }
+        h2 { color: #1e75b0; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+
+        .header {
+            display: flex;           /* Enable Flexbox */
+            align-items: center;     /* Vertically center items */
+            justify-content: space-between; /* Push name left, photo right */
+            margin-bottom: 30px;
+        }
+        
+        .photo {
+            width: 200px;            /* Adjust size as needed */
+            height: 200px;
+            border-radius: 50%;     /* Circular photo */
+            object-fit: cover;      /* Ensures image fills the circle */
+            border: 3px solid #3498db; /* Optional border */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- Header -->
+        <div class="name">
+            <h1>Zhili Tian</h1>
+            <li>Email: <a href="zhili.tian@nottingham.ac.uk">zhili.tian@nottingham.ac.uk</a></li>
+            <li>GitHub: <a href="https://github.com/zt719">zt719</a></li>
+        </div>
+        <img src="profile.jpg" alt="Your Photo" class="photo">
+    </div>
+
+    <!-- About -->
+    <div class="section">
+        <h2>About Me</h2>
+        <p>
+            I'm currently a first year PhD student in <a href="https://www.nottingham.ac.uk/research/groups/fp-lab/">FP Lab</a> at the University of Nottingham,
+            under the supervision of <a href="https://people.cs.nott.ac.uk/psztxa/">Thorsten Altenkirch</a>.
+        </p>
+        <p>From 2019 to 2023, I did my Master at Imperial College London, Department of Computer Science.</p>
+        <p>
+            I'm generally interested in type theory, category theory and functional programming.
+            My current research involves the container models and formal verifications.
+        </p>
+    </div>
+
+    <!-- Writings -->
+    <div class="section">
+        <h2>My Writings</h2>
+        <p>I will save a space for the future works</p>
+
+    </div>
+
+    <!-- Teachings -->
+    <div class="section">
+        <h2>Teaching Assistant - University of Nottingham</h2>
+
+        <h3><li>Lanugages and Computation - (Spring 2025)</li></h3>
+        <p>
+            This is a second-year module for computer science students, mainly about automata theory and formal language theory.
+            You can find the slides I used for the weekly tutorials <a href="https://github.com/zt719/lac">here</a>.
+        </p>
+        
+        <h3><li>Functional Programming - (Spring 2025)</li></h3>
+        <p>I also worked as a lab assistant to help first-year undergraduates to understand and write Haskell</p>
+    </div>
+</body>
+</html>
