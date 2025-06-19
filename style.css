@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'mononoki';
+    src: url('mononoki-Regular.ttf') format('woff2');
+}
+
+body {
+    font-family: 'mononoki';
+    font-weight: normal; 
+    font-style: normal;
+    font-size: larger;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font: inherit;
+}
+
+h1 { color: #2c3e50; }
+h2 {
+    color: #1e75b0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3498db;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
