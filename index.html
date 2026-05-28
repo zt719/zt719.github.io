@@ -1,53 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhili Tian</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhili Tian</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+  function flipPhoto() {
+    document.querySelector('.photo').classList.toggle('flipped');
+  }
+</script>
+
 <body>
-    <div class="header">
-        <div class="name">
-            <h1>Zhili Tian</h1>
-            <li>Email: <a href="mailto:zhili.tian@nottingham.ac.uk">zhili.tian@nottingham.ac.uk</a></li>
-            <li>GitHub: <a href="https://github.com/zt719">zt719</a></li>
-        </div>
-        <img src="profile.jpg" alt="Your Photo" class="photo">
+  <header class="header">
+    <div class="name">
+      <h1>Zhili Tian</h1>
+      <ul class="contact-list">
+        <li>zhilitian719@gmail.com</li>
+        <li><a href="https://github.com/zt719"><u>GitHub</u></a></li>
+	<li><a href="https://www.linkedin.com/in/zhili-tian-082a66224/"><u>LinkedIn</u></a></li>
+      </ul>
     </div>
-
-    <div class="section">
-        <h2>About Me</h2>
-        <p>
-            I'm currently a first year PhD student in <a href="https://www.nottingham.ac.uk/research/groups/fp-lab/">FP Lab</a> at the University of Nottingham,
-            under the supervision of <a href="https://people.cs.nott.ac.uk/psztxa/">Thorsten Altenkirch</a>.
-        </p>
-        <p>I obtained my master degree in 2023 at Imperial College London, Department of Computer Science</p>
-        <p>
-            I'm generally interested in 
-            <span class="green">type theory</span>,
-            <span class="red">category theory</span> and
-            <span class="blue">functional programming</span>.
-        </p>
+    <div class="photo" onclick="flipPhoto()">
+      <img src="id_photo.jpg" alt="Zhili Tian portrait" class="front">
+      <img src="profile.jpg" alt="Zhili Tian alternate portrait" class="back">
     </div>
+  </header>
 
-    <div class="section">
-        <h2>My Writings</h2>
-        <p>I will save a space for the future works</p>
-    </div>
+  <main>
+    <section class="section">
+      <h2>About Me</h2>
+      <p>
+        I'm currently a second-year PhD student in
+        <a href="https://www.nottingham.ac.uk/research/groups/fp-lab/">FP Lab</a>
+        at the University of Nottingham, supervised by
+        <a href="https://people.cs.nott.ac.uk/psztxa/">Prof. Thorsten Altenkirch</a>.
+        I obtained my master's degree in 2023 at Imperial College London, Department of Computer Science, under the supervision of
+        <a href="https://zenzike.com/">Prof. Nicolas Wu</a>.
+      </p>
+      <p>
+        I'm generally interested in
+        <span class="green">type theory</span>,
+        <span class="red">category theory</span>, and
+        <span class="blue">functional programming</span>.
+      </p>
+    </section>
 
-    <div class="section">
-        <h2>Teaching Assistant - University of Nottingham</h2>
+    <section class="section">
+      <h2>Writings & Talks</h2>
+      <ul class="item-list">
+        <li>
+          <strong>Containers in Higher Kinds</strong> — TYPES 2026, Gothenburg, Sweden
+          <div class="links">
+            <a href="https://types2026.cse.chalmers.se/slides/49.pdf"><u>Slides</u></a>
+            /
+            <a href="https://types2026.cse.chalmers.se/abstracts/49.pdf"><u>Abstract</u></a>
+	    /
+	    <a href="https://github.com/zt719/higher_containers"><u>Formalization</u></a>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-        <h3><li>Languages and Computation - (Spring 2025)</li></h3>
-        <p>
-            This is a second-year module for computer science students, mainly about automata theory and formal language theory.
-            You can find the slides I used for the weekly tutorials <a href="https://github.com/zt719/lac">here</a>.
-        </p>
-        
-        <h3><li>Functional Programming - (Spring 2025)</li></h3>
-        <p>I also worked as a lab assistant to help first-year undergraduates to understand and write Haskell</p>
-    </div>
+    <section class="section">
+      <h2>Teaching Assistant</h2>
+      <ul class="item-list">
+        <li>
+          <strong>Introduction to Formal Reasoning</strong> — Autumn 2026
+          <p>
+            You can find the files I used for the weekly tutorials
+	    <a href="https://github.com/zt719/ifr26"><u>2026</u></a>
+	  </p>
+        </li>
+
+        <li>
+          <strong>Languages and Computation</strong> — Spring 2025 &amp; 2026
+          <p>
+            You can find the files I used for the weekly tutorials
+            <a href="https://github.com/zt719/lac"><u>2025</u></a>
+	    /
+	    <a href="https://github.com/zt719/lac26"><u>2026</u></a>
+          </p>
+        </li>
+
+        <li>
+          <strong>Functional Programming</strong> — Spring 2025 &amp; 2026
+        </li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
